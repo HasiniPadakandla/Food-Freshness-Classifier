@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🍃 Food Freshness Scanner
 
 A camera-based AI web application that checks food freshness using a pretrained computer vision model.
@@ -25,9 +24,9 @@ A camera-based AI web application that checks food freshness using a pretrained 
 
 ## How It Works
 1. User opens the web app
-2. Captures food image using camera
+2. Captures food image using a camera
 3. Image is sent to FastAPI backend
-4. Vision model analyzes the image
+4. The vision model analyzes the image
 5. App returns freshness label and confidence
 
 ## Run Locally
@@ -37,6 +36,4 @@ A camera-based AI web application that checks food freshness using a pretrained 
 cd backend
 pip install -r requirements.txt
 uvicorn app:app --reload
-=======
-
->>>>>>> 748de6367bd4845c39b73832b8c9d807df957191
+```
