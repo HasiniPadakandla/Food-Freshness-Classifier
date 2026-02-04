@@ -83,3 +83,37 @@ The model is used **as-is for inference** to ensure fast performance and reliabi
 cd backend
 pip install -r requirements.txt
 uvicorn app:app --reload
+```
+
+Backend runs at: 
+```
+http://127.0.0.1:8000
+```
+API documentation:
+```
+http://127.0.0.1:8000/docs
+```
+
+### 2️⃣ Frontend Setup
+
+Open the following file in your browser:
+```
+frontend/index.html
+```
+- Allow camera access when prompted
+
+- Click Open Camera
+
+- Click Scan Freshness
+
+### 📈 Future Enhancements
+
+- Fine-tuning the model on freshness-specific datasets
+
+- Adding multi-class labels (Fresh / Okay / Avoid)
+
+- Food category detection
+
+- Public deployment
+
+- Mobile-first PWA version
