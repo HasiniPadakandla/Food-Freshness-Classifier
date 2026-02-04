@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Food Freshness Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HERO / LANDING -->
+<section class="hero">
+  <h1>🍃 Food Freshness Scanner</h1>
+  <p>
+    Scan your food instantly and make safer, healthier choices.
+    Powered by AI vision.
+  </p>
+  <button onclick="scrollToScanner()">Start Scanning</button>
+</section>
+
+<!-- SCANNER -->
+<section class="scanner" id="scanner">
+  <div class="card">
+    <h2>Scan Your Food</h2>
+
+    <div class="camera-box">
+      <video id="camera" autoplay></video>
+
+      <!-- scan animation -->
+      <div class="scan-line"></div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="actions">
+      <button class="btn outline" onclick="openCamera()">Open Camera</button>
+      <button class="btn primary" onclick="capture()">Scan Freshness</button>
+    </div>
+
+    <!-- RESULT -->
+    <div id="result" class="result hidden"></div>
+
+    <!-- TIPS -->
+    <div id="tips" class="tips hidden"></div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
